@@ -1,0 +1,245 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+html {
+	font-family: 'Poppins', sans-serif;
+}
+
+button {
+	cursor: pointer;
+	font-size: 0.85em;
+	letter-spacing: 0.02em;
+}
+
+header {
+	width: 100%;
+	height: 50px;
+}
+
+.logo {
+	background-color: navy;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 75px;
+	top: 10px;
+	width: 40px;
+	height: 40px;
+	
+}
+
+.nav-bar ul {
+	margin-left: 200px;
+	margin-top: 20px;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.nav-bar ul li {
+	display: inline;
+}
+
+.nav-bar a {
+	color: lightslategray;
+	margin: 0px 20px;
+	padding: 8px;
+	
+	font-size: 0.85em;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 0.02em;
+}
+
+.nav-bar a:hover {
+	color: navy;
+}
+
+#login-btn {
+	background-color: #FFF;
+	color: navy;
+	border: none;
+	position: absolute;
+	float: right;
+	width: 100px;
+	height: 35px;
+	top: 15px;
+	right: 200px;
+}
+
+#login-btn:hover {
+	color: lightslategray;
+}
+
+#signup-btn {
+	background-color: navy;
+	color: #FFF;
+	border: none;
+	border-radius: 5px;
+	position: absolute;
+	float: right;
+	width: 100px;
+	height: 35px;
+	top: 15px;
+	right: 100px;
+}
+
+#signup-btn:hover {
+	color: navy;
+	background-color: white;
+	border: 2px solid navy;
+}
+
+.row-1 {
+	margin-left: 150px; 
+	width: 40%;
+}
+
+#page-title {
+	color: navy;
+	position: relative;
+	margin: 100px 0px 30px 0px;
+	font-weight: 600;
+	font-size: 2em;
+}
+
+#page-subtitle {
+	color: lightslategray;
+	position: relative;
+	margin: 0px;
+	font-weight: 400;
+	font-size: 0.85em;
+}
+
+#get-started-btn {
+	background-color: navy;
+	color: #FFF;
+	border: none;
+	border-radius: 5px;
+	margin: 40px 0px;
+	width: 100px;
+	height: 35px;
+}
+
+#get-started-btn:hover {
+	color: navy;
+	background-color: white;
+	border: 2px solid navy;
+}
+
+#learn-more-btn {
+	background-color: white;
+	color: navy;
+	border: 2px solid navy;
+	border-radius: 5px;
+	margin: 40px 0px 0px 20px;
+	width: 100px;
+	height: 35px;
+}
+
+#learn-more-btn:hover {
+	color: white;
+	background-color: navy;
+	border: none;
+}
+
+.icons {
+	color: rgba(0,0,0,0.2);
+	position: relative;
+	top: -20px;
+	font-size: 5em;
+}
+
+.icons i {
+	margin: 0px 9px;
+}
+
+.row-2 {
+	margin-right: 150px; 
+	width: 40%;
+}
+
+.pic {
+	position: absolute;
+	border-radius: 5px;
+	box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.25);
+	overflow: hidden;
+	width: 400px;
+	height: 400px;
+	top: 150px;
+	right: 150px;
+	
+}
+
+.pic img {
+	width: 400px;
+	height: auto;
+}
+
+@media only screen and (min-width: 320px) {
+	.logo { visibility: hidden; }
+	.nav-bar ul { visibility: hidden; }
+	button { font-size: 0.75em; }
+	.row-1 { width: 85%;  text-align: center; margin-left: 25px; }
+	#page-title { font-size: 1.2em; margin-top: 50px; z-index: 5; }
+	#page-subtitle { font-size: 0.70em; z-index: 5; }
+	#login-btn { right: 160px; }
+	#signup-btn { right: 60px; }
+	.icons { font-size: 2em; text-align: center; }
+	
+	.pic { width: 100%; height: 200px; top: 90px; right: 0; }
+	.pic img { width: 100%; opacity: 0.25; }
+}
+
+@media only screen and (min-width: 428px) {
+	.pic { height: 170px; }
+}
+
+@media only screen and (min-width: 480px) {
+	.row-1 { width: 85%; margin-left: 40px; text-align: center;}
+	#page-title { font-size: 1.6em; margin-top: 50px; z-index: 5; }
+	#page-subtitle { font-size: 0.75em; z-index: 5; }
+	.pic { height: 230px; }
+	.icons { font-size: 3.4em; text-align: center; }
+}
+
+@media only screen and (min-width: 558px) {
+	.pic { height: 200px; }
+}
+
+@media only screen and (min-width: 768px) {
+	.logo { visibility: visible; }
+	.nav-bar ul { visibility: visible; margin-left: 150px; font-size: 1em; }
+	#login-btn { right: 160px; }
+	#signup-btn { right: 60px; }
+	button { font-size: 0.75em; }
+	.nav-bar a { font-size: 0.75em; margin: 0px 10px; }
+	.row-1 { margin-top: -50px; margin-left: 75px; text-align: left;}
+	#page-title { font-size: 1.5em; width: 50%; margin-top: 100px; }
+	#page-subtitle { font-size: 0.75em; width: 50%; }
+	.icons { font-size: 3em; text-align: left; }
+	.pic { width: 250px; height: 250px; margin-top: 70px; right: 75px; }
+	.pic img { width: 250px; opacity: 1; }
+}
+
+
+@media only screen and (min-width: 992px) {
+	button { font-size: 0.75em; }
+	.nav-bar { margin-left: 50px; }
+	.nav-bar a { font-size: 0.75em; margin: 0px 10px; }
+	.row-1 { margin-top: 0px; margin-left: 100px; }
+	#page-title { font-size: 1.5em; width: 50%; margin-top: 50px;}
+	#page-subtitle { font-size: 0.75em; width: 50%; }
+	.icons { font-size: 3.5em; }
+	.pic { width: 300px; height: 300px; margin-top: 30px; right: 100px; }
+	.pic img { width: 300px; }
+}
+
+@media only screen and (min-width: 1200px) {
+	button { font-size: 0.85em; }
+	.nav-bar a { font-size: 0.85em; margin: 0px 15px; }
+	#page-title { font-size: 2em; width: 40%; margin-left: 100px; margin-top: 50px; }
+	#page-subtitle { font-size: 0.85em; width: 40%; margin-left: 100px; }
+	#get-started-btn { margin-left: 100px; }
+	.icons { font-size: 4em; margin-left: 100px; }
+	.pic { width: 400px; height: 400px; right: 150px; }
+	.pic img { width: 400px; }
+}
